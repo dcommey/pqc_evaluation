@@ -1,0 +1,45 @@
+\begin{table}
+\caption{KEM Performance Slowdown Factors on Raspberry Pi}
+\label{tab:pi_kem_slowdown}
+\begin{tabular}{lrrrlll}
+\toprule
+ & Key Generation (ms) & Encapsulation (ms) & Decapsulation (ms) & Algorithm & Type & Family \\
+\midrule
+0 & 30.58 & 30.78 & 32.71 & BIKE-L1 & Post-Quantum & BIKE \\
+1 & 30.85 & 30.95 & 33.25 & BIKE-L3 & Post-Quantum & BIKE \\
+2 & 30.88 & 31.08 & 33.26 & BIKE-L5 & Post-Quantum & BIKE \\
+3 & 21.11 & 42.91 & 13.00 & Classic-McEliece-348864 & Post-Quantum & Classic \\
+4 & 20.91 & 49.73 & 13.10 & Classic-McEliece-348864f & Post-Quantum & Classic \\
+5 & 23.25 & 39.47 & 12.41 & Classic-McEliece-460896 & Post-Quantum & Classic \\
+6 & 23.47 & 41.02 & 12.45 & Classic-McEliece-460896f & Post-Quantum & Classic \\
+7 & 36.71 & 34.05 & 12.29 & Classic-McEliece-6688128 & Post-Quantum & Classic \\
+8 & 34.84 & 37.38 & 12.35 & Classic-McEliece-6688128f & Post-Quantum & Classic \\
+9 & 34.97 & 15.96 & 12.29 & Classic-McEliece-6960119 & Post-Quantum & Classic \\
+10 & 35.28 & 16.42 & 12.32 & Classic-McEliece-6960119f & Post-Quantum & Classic \\
+11 & 51.67 & 41.71 & 12.23 & Classic-McEliece-8192128 & Post-Quantum & Classic \\
+12 & 41.09 & 44.97 & 12.29 & Classic-McEliece-8192128f & Post-Quantum & Classic \\
+13 & 391.65 & 264.22 & 269.18 & FrodoKEM-1344-AES & Post-Quantum & FrodoKEM \\
+14 & 21.25 & 21.04 & 21.13 & FrodoKEM-1344-SHAKE & Post-Quantum & FrodoKEM \\
+15 & 318.46 & 204.72 & 211.31 & FrodoKEM-640-AES & Post-Quantum & FrodoKEM \\
+16 & 21.12 & 18.82 & 21.06 & FrodoKEM-640-SHAKE & Post-Quantum & FrodoKEM \\
+17 & 352.93 & 242.77 & 250.54 & FrodoKEM-976-AES & Post-Quantum & FrodoKEM \\
+18 & 21.04 & 20.70 & 20.88 & FrodoKEM-976-SHAKE & Post-Quantum & FrodoKEM \\
+19 & 46.42 & 46.09 & 45.31 & HQC-128 & Post-Quantum & HQC \\
+20 & 47.77 & 47.56 & 47.33 & HQC-192 & Post-Quantum & HQC \\
+21 & 47.37 & 48.06 & 47.67 & HQC-256 & Post-Quantum & HQC \\
+22 & 41.18 & 34.66 & 34.49 & Kyber1024 & Post-Quantum & Kyber1024 \\
+23 & 43.75 & 33.61 & 32.94 & Kyber512 & Post-Quantum & Kyber512 \\
+24 & 41.36 & 33.94 & 33.45 & Kyber768 & Post-Quantum & Kyber768 \\
+25 & 48.61 & 50.98 & 50.86 & ML-KEM-1024 & Post-Quantum & ML \\
+26 & 48.20 & 50.88 & 51.09 & ML-KEM-512 & Post-Quantum & ML \\
+27 & 47.96 & 51.41 & 51.39 & ML-KEM-768 & Post-Quantum & ML \\
+28 & 27.63 & 34.99 & 37.75 & sntrup761 & Post-Quantum & sntrup761 \\
+29 & 19.93 & 14.76 & 11.48 & RSA-2048 & Classical & RSA \\
+30 & 22.70 & 12.65 & 14.29 & RSA-3072 & Classical & RSA \\
+31 & 26.37 & 11.30 & 17.00 & RSA-4096 & Classical & RSA \\
+32 & 13.88 & 18.50 & 18.97 & ECDH-256 & Classical & ECDH \\
+33 & 8.40 & 8.49 & 8.61 & ECDH-384 & Classical & ECDH \\
+34 & 12.53 & 14.77 & 14.70 & ECDH-521 & Classical & ECDH \\
+\bottomrule
+\end{tabular}
+\end{table}

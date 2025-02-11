@@ -1,0 +1,16 @@
+\begin{table}
+\caption{Signature Performance Statistics (Message Size: 1048576 bytes)}
+\label{tab:sig_platform_stats_1048576}
+\begin{tabular}{lrrrrrrl}
+\toprule
+Type & Key Generation (ms) mean & Key Generation (ms) std & Signing (ms) mean & Signing (ms) std & Verification (ms) mean & Verification (ms) std & Platform \\
+\midrule
+Classical & 89.98 & 154.00 & 2.38 & 2.60 & 0.61 & 0.25 & MACOS \\
+Post-Quantum & 8.72 & 20.63 & 82.13 & 198.83 & 1.73 & 0.68 & MACOS \\
+Classical & 78.60 & 141.72 & 1.51 & 0.90 & 0.85 & 0.28 & UBUNTU \\
+Post-Quantum & 4.98 & 10.90 & 43.29 & 102.70 & 2.57 & 0.77 & UBUNTU \\
+Classical & 2286.47 & 4173.19 & 48.51 & 43.28 & 20.72 & 4.42 & RASPBERRY \\
+Post-Quantum & 167.79 & 391.61 & 1578.87 & 3742.66 & 33.53 & 10.82 & RASPBERRY \\
+\bottomrule
+\end{tabular}
+\end{table}

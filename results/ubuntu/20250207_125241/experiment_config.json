@@ -1,0 +1,14 @@
+{
+  "platform": "ubuntu",
+  "iterations": 1000,
+  "skip_baseline": false,
+  "skip_pqc": false,
+  "timestamp": "20250207_125241",
+  "platform_info": {
+    "system": "Linux",
+    "node": "daniel-Legion-T5-26IOB6",
+    "release": "6.8.0-51-generic",
+    "version": "#52-Ubuntu SMP PREEMPT_DYNAMIC Thu Dec  5 13:09:44 UTC 2024",
+    "machine": "x86_64"
+  }
+}

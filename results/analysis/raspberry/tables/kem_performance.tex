@@ -1,0 +1,92 @@
+\begin{longtable}\toprule{lrrrrr}
+\caption{KEM Performance Analysis (RASPBERRY)} \label{tab:kem_performance_raspberry} \\
+\toprule
+ &  &  & Ciphertext Size (bytes) & Decapsulation (ms) & Encapsulation (ms) & Key Generation (ms) & Public Key Size (bytes) \\
+ &  &  & first & mean & mean & mean & first \\
+Algorithm & Type & Security Level &  &  &  &  &  \\
+\midrule
+\endfirsthead
+\caption[]{KEM Performance Analysis (RASPBERRY)} \\
+\toprule
+ &  &  & Ciphertext Size (bytes) & Decapsulation (ms) & Encapsulation (ms) & Key Generation (ms) & Public Key Size (bytes) \\
+ &  &  & first & mean & mean & mean & first \\
+Algorithm & Type & Security Level &  &  &  &  &  \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+ECDH-256 & Classical & 1 & 91 & 0.980000 & 1.000000 & 0.250000 & 91 \\
+\cline{1-8} \cline{2-8}
+RSA-2048 & Classical & 1 & 256 & 19.820000 & 0.870000 & 1132.500000 & 294 \\
+\cline{1-8} \cline{2-8}
+ECDH-384 & Classical & 3 & 120 & 4.260000 & 4.270000 & 1.680000 & 120 \\
+\cline{1-8} \cline{2-8}
+RSA-3072 & Classical & 3 & 384 & 54.850000 & 1.330000 & 3649.270000 & 422 \\
+\cline{1-8} \cline{2-8}
+ECDH-521 & Classical & 5 & 158 & 6.720000 & 6.730000 & 2.650000 & 158 \\
+\cline{1-8} \cline{2-8}
+RSA-4096 & Classical & 5 & 512 & 118.300000 & 1.960000 & 10417.060000 & 550 \\
+\cline{1-8} \cline{2-8}
+BIKE-L1 & Post-Quantum & 1 & 1573 & 105.430000 & 6.890000 & 128.230000 & 1541 \\
+\cline{1-8} \cline{2-8}
+Classic-McEliece-348864 & Post-Quantum & 1 & 96 & 166.570000 & 0.990000 & 944.550000 & 261120 \\
+\cline{1-8} \cline{2-8}
+Classic-McEliece-348864f & Post-Quantum & 1 & 96 & 166.560000 & 1.050000 & 453.840000 & 261120 \\
+\cline{1-8} \cline{2-8}
+FrodoKEM-640-AES & Post-Quantum & 1 & 9720 & 51.700000 & 51.840000 & 50.940000 & 9616 \\
+\cline{1-8} \cline{2-8}
+FrodoKEM-640-SHAKE & Post-Quantum & 1 & 9720 & 18.950000 & 19.110000 & 17.030000 & 9616 \\
+\cline{1-8} \cline{2-8}
+HQC-128 & Post-Quantum & 1 & 4433 & 45.310000 & 29.950000 & 15.040000 & 2249 \\
+\cline{1-8} \cline{2-8}
+Kyber512 & Post-Quantum & 1 & 768 & 0.170000 & 0.220000 & 0.210000 & 800 \\
+\cline{1-8} \cline{2-8}
+ML-KEM-512 & Post-Quantum & 1 & 768 & 0.390000 & 0.350000 & 0.290000 & 800 \\
+\cline{1-8} \cline{2-8}
+sntrup761 & Post-Quantum & 2 & 1039 & 2.540000 & 1.390000 & 38.730000 & 1158 \\
+\cline{1-8} \cline{2-8}
+BIKE-L3 & Post-Quantum & 3 & 3115 & 333.680000 & 20.860000 & 398.080000 & 3083 \\
+\cline{1-8} \cline{2-8}
+Classic-McEliece-460896 & Post-Quantum & 3 & 156 & 268.450000 & 1.920000 & 2920.310000 & 524160 \\
+\cline{1-8} \cline{2-8}
+Classic-McEliece-460896f & Post-Quantum & 3 & 156 & 268.430000 & 1.930000 & 1432.180000 & 524160 \\
+\cline{1-8} \cline{2-8}
+FrodoKEM-976-AES & Post-Quantum & 3 & 15744 & 119.270000 & 119.200000 & 117.450000 & 15632 \\
+\cline{1-8} \cline{2-8}
+FrodoKEM-976-SHAKE & Post-Quantum & 3 & 15744 & 42.100000 & 42.340000 & 38.160000 & 15632 \\
+\cline{1-8} \cline{2-8}
+HQC-192 & Post-Quantum & 3 & 8978 & 137.320000 & 91.210000 & 45.670000 & 4522 \\
+\cline{1-8} \cline{2-8}
+Kyber768 & Post-Quantum & 3 & 1088 & 0.250000 & 0.310000 & 0.280000 & 1184 \\
+\cline{1-8} \cline{2-8}
+ML-KEM-768 & Post-Quantum & 3 & 1088 & 0.590000 & 0.530000 & 0.450000 & 1184 \\
+\cline{1-8} \cline{2-8}
+BIKE-L5 & Post-Quantum & 5 & 5154 & 832.920000 & 51.970000 & 996.090000 & 5122 \\
+\cline{1-8} \cline{2-8}
+Classic-McEliece-6688128 & Post-Quantum & 5 & 208 & 513.540000 & 3.880000 & 9723.080000 & 1044992 \\
+\cline{1-8} \cline{2-8}
+Classic-McEliece-6688128f & Post-Quantum & 5 & 208 & 513.530000 & 3.940000 & 3458.880000 & 1044992 \\
+\cline{1-8} \cline{2-8}
+Classic-McEliece-6960119 & Post-Quantum & 5 & 194 & 497.290000 & 6.810000 & 8737.870000 & 1047319 \\
+\cline{1-8} \cline{2-8}
+Classic-McEliece-6960119f & Post-Quantum & 5 & 194 & 497.260000 & 6.910000 & 3465.020000 & 1047319 \\
+\cline{1-8} \cline{2-8}
+Classic-McEliece-8192128 & Post-Quantum & 5 & 208 & 627.780000 & 4.820000 & 14750.700000 & 1357824 \\
+\cline{1-8} \cline{2-8}
+Classic-McEliece-8192128f & Post-Quantum & 5 & 208 & 627.810000 & 4.820000 & 4351.930000 & 1357824 \\
+\cline{1-8} \cline{2-8}
+FrodoKEM-1344-AES & Post-Quantum & 5 & 21632 & 224.740000 & 225.610000 & 221.740000 & 21520 \\
+\cline{1-8} \cline{2-8}
+FrodoKEM-1344-SHAKE & Post-Quantum & 5 & 21632 & 77.420000 & 77.370000 & 69.130000 & 21520 \\
+\cline{1-8} \cline{2-8}
+HQC-256 & Post-Quantum & 5 & 14421 & 251.620000 & 166.750000 & 83.490000 & 7245 \\
+\cline{1-8} \cline{2-8}
+Kyber1024 & Post-Quantum & 5 & 1568 & 0.360000 & 0.410000 & 0.370000 & 1568 \\
+\cline{1-8} \cline{2-8}
+ML-KEM-1024 & Post-Quantum & 5 & 1568 & 0.830000 & 0.750000 & 0.650000 & 1568 \\
+\cline{1-8} \cline{2-8}
+\bottomrule\end{longtable}

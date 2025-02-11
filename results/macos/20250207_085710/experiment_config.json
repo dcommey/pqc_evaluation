@@ -1,0 +1,14 @@
+{
+  "platform": "macos",
+  "iterations": 1000,
+  "skip_baseline": false,
+  "skip_pqc": false,
+  "timestamp": "20250207_085710",
+  "platform_info": {
+    "system": "Darwin",
+    "node": "Daniels-Mac-mini.local",
+    "release": "24.3.0",
+    "version": "Darwin Kernel Version 24.3.0: Thu Jan  2 20:22:58 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8132",
+    "machine": "arm64"
+  }
+}

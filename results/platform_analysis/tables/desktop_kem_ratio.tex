@@ -1,0 +1,45 @@
+\begin{table}
+\caption{KEM Performance Ratios between Ubuntu and macOS}
+\label{tab:desktop_kem_ratio}
+\begin{tabular}{lrrrlll}
+\toprule
+ & Key Generation (ms) & Encapsulation (ms) & Decapsulation (ms) & Algorithm & Type & Family \\
+\midrule
+0 & 0.04 & 0.14 & 0.10 & BIKE-L1 & Post-Quantum & BIKE \\
+1 & 0.03 & 0.10 & 0.09 & BIKE-L3 & Post-Quantum & BIKE \\
+2 & 0.03 & 0.08 & 0.10 & BIKE-L5 & Post-Quantum & BIKE \\
+3 & 0.70 & 1.96 & 0.00 & Classic-McEliece-348864 & Post-Quantum & Classic \\
+4 & 1.17 & 2.20 & 0.00 & Classic-McEliece-348864f & Post-Quantum & Classic \\
+5 & 0.88 & 2.14 & 0.00 & Classic-McEliece-460896 & Post-Quantum & Classic \\
+6 & 1.27 & 2.10 & 0.00 & Classic-McEliece-460896f & Post-Quantum & Classic \\
+7 & 0.56 & 1.53 & 0.00 & Classic-McEliece-6688128 & Post-Quantum & Classic \\
+8 & 1.06 & 1.65 & 0.00 & Classic-McEliece-6688128f & Post-Quantum & Classic \\
+9 & 0.52 & 0.41 & 0.00 & Classic-McEliece-6960119 & Post-Quantum & Classic \\
+10 & 1.01 & 0.41 & 0.00 & Classic-McEliece-6960119f & Post-Quantum & Classic \\
+11 & 0.63 & 1.83 & 0.00 & Classic-McEliece-8192128 & Post-Quantum & Classic \\
+12 & 1.07 & 1.95 & 0.00 & Classic-McEliece-8192128f & Post-Quantum & Classic \\
+13 & 1.47 & 1.24 & 1.22 & FrodoKEM-1344-AES & Post-Quantum & FrodoKEM \\
+14 & 0.90 & 0.85 & 0.84 & FrodoKEM-1344-SHAKE & Post-Quantum & FrodoKEM \\
+15 & 1.52 & 1.30 & 1.28 & FrodoKEM-640-AES & Post-Quantum & FrodoKEM \\
+16 & 0.96 & 0.84 & 0.93 & FrodoKEM-640-SHAKE & Post-Quantum & FrodoKEM \\
+17 & 1.39 & 1.30 & 1.28 & FrodoKEM-976-AES & Post-Quantum & FrodoKEM \\
+18 & 0.90 & 0.86 & 0.86 & FrodoKEM-976-SHAKE & Post-Quantum & FrodoKEM \\
+19 & 4.17 & 4.19 & 4.11 & HQC-128 & Post-Quantum & HQC \\
+20 & 4.34 & 4.34 & 4.32 & HQC-192 & Post-Quantum & HQC \\
+21 & 4.28 & 4.37 & 4.33 & HQC-256 & Post-Quantum & HQC \\
+22 & 2.07 & 1.88 & 1.67 & Kyber1024 & Post-Quantum & Kyber1024 \\
+23 & 2.08 & 1.84 & 1.63 & Kyber512 & Post-Quantum & Kyber512 \\
+24 & 2.08 & 1.84 & 1.64 & Kyber768 & Post-Quantum & Kyber768 \\
+25 & 1.28 & 1.22 & 0.99 & ML-KEM-1024 & Post-Quantum & ML \\
+26 & 1.48 & 1.39 & 1.06 & ML-KEM-512 & Post-Quantum & ML \\
+27 & 1.47 & 1.38 & 1.10 & ML-KEM-768 & Post-Quantum & ML \\
+28 & 0.14 & 0.36 & 0.22 & sntrup761 & Post-Quantum & sntrup761 \\
+29 & 0.63 & 1.02 & 0.29 & RSA-2048 & Classical & RSA \\
+30 & 0.83 & 0.88 & 0.30 & RSA-3072 & Classical & RSA \\
+31 & 0.96 & 0.71 & 0.31 & RSA-4096 & Classical & RSA \\
+32 & 0.84 & 1.20 & 1.22 & ECDH-256 & Classical & ECDH \\
+33 & 0.60 & 0.62 & 0.63 & ECDH-384 & Classical & ECDH \\
+34 & 0.53 & 0.61 & 0.61 & ECDH-521 & Classical & ECDH \\
+\bottomrule
+\end{tabular}
+\end{table}

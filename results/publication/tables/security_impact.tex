@@ -1,0 +1,18 @@
+\begin{table}
+\caption{Impact of Security Level on Performance and Size}
+\label{tab:security_impact}
+\begin{tabular}{lrrrrrrrrrrrrrrrr}
+\toprule
+ & Classical Key Generation (ms) & Classical Encapsulation (ms) & Classical Decapsulation (ms) & Classical Public Key Size (bytes) & Classical Ciphertext Size (bytes) & Post-Quantum Key Generation (ms) & Post-Quantum Encapsulation (ms) & Post-Quantum Decapsulation (ms) & Post-Quantum Public Key Size (bytes) & Post-Quantum Ciphertext Size (bytes) & Classical Signing (ms) & Classical Verification (ms) & Classical Signature Size (bytes) & Post-Quantum Signing (ms) & Post-Quantum Verification (ms) & Post-Quantum Signature Size (bytes) \\
+\midrule
+KEM Level 1 & 28.43 & 0.06 & 0.89 & 192.50 & 173.50 & 8.99 & 0.27 & 3.86 & 68357.75 & 3396.75 & NaN & NaN & NaN & NaN & NaN & NaN \\
+KEM Level 2 & NaN & NaN & NaN & NaN & NaN & 1.40 & 0.04 & 0.07 & 1158.00 & 1039.00 & NaN & NaN & NaN & NaN & NaN & NaN \\
+KEM Level 3 & 80.47 & 0.30 & 2.17 & 271.00 & 252.00 & 25.33 & 0.66 & 7.33 & 136194.62 & 5758.62 & NaN & NaN & NaN & NaN & NaN & NaN \\
+KEM Level 5 & 197.65 & 0.31 & 3.71 & 354.00 & 335.00 & 95.12 & 0.92 & 25.12 & 579901.08 & 5599.58 & NaN & NaN & NaN & NaN & NaN & NaN \\
+Signature Level 1 & 18.35 & NaN & NaN & 143.00 & NaN & 7.66 & NaN & NaN & 640.79 & NaN & 0.80 & 0.20 & 130.17 & 57.21 & 0.74 & 8822.79 \\
+Signature Level 2 & NaN & NaN & NaN & NaN & NaN & 0.03 & NaN & NaN & 1312.00 & NaN & NaN & NaN & NaN & 0.39 & 0.32 & 2420.00 \\
+Signature Level 3 & 81.48 & NaN & NaN & 271.00 & NaN & 11.61 & NaN & NaN & 565.08 & NaN & 2.19 & 0.44 & 243.38 & 110.15 & 1.04 & 21113.31 \\
+Signature Level 5 & 205.93 & NaN & NaN & 354.00 & NaN & 8.36 & NaN & NaN & 987.40 & NaN & 3.82 & 0.48 & 325.12 & 89.01 & 1.14 & 30977.92 \\
+\bottomrule
+\end{tabular}
+\end{table}
