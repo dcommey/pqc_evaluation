@@ -1,3 +1,18 @@
+# PQC Performance Evaluation
+
+## Overview
+
+This project provides a framework for benchmarking the performance of Post-Quantum Cryptography (PQC) algorithms, specifically Key Encapsulation Mechanisms (KEMs) and Digital Signature schemes, against classical counterparts (RSA, ECC). It facilitates cross-platform evaluation (tested on macOS, Ubuntu, Raspberry Pi) and generates consolidated analysis reports including figures and tables suitable for research publication. The focus is on metrics relevant to Consumer Electronics (CE) and resource-constrained environments, such as execution time and communication costs.
+
+The benchmarking relies on the `liboqs` library for PQC implementations and the `cryptography` library for classical baselines. Analysis scripts process the raw benchmark data, handle algorithm name consolidation (e.g., Kyber -> ML-KEM), and produce structured outputs.
+
+## Features
+
+*   Benchmarks NIST PQC standards (ML-KEM, ML-DSA, Falcon, SPHINCS+) and other relevant candidates (BIKE, HQC, Classic McEliece, FrodoKEM, MAYO).
+*   Includes classical baselines (RSA, ECDH, ECDSA, Ed25519).
+*   Supports cross-platform execution (macOS, Ubuntu, Raspberry Pi tested).
+*   Measures execution time (KeyGen, Encaps/Decaps, Sign/Verify) and communication sizes (Keys, Ciphertexts, Signatures).
+*   Evaluates signature performance across varying message sizes (1KB to 1MB).
 
 ## Prerequisites
 
@@ -68,18 +83,6 @@
     *   `--results-dir`: Base directory containing platform result folders (default: `results`).
     *   `--no-tex`: Use standard matplotlib fonts instead of LaTeX for rendering (useful if LaTeX is not installed).
     *   Output is saved to `results/consolidated_analysis_v2/`.
-
-3.  **Generate Appendix Analysis:**
-    Similar to the consolidated analysis, run `appendix_analysis.py`.
-    ```bash
-    # Process results from the 'results/' directory
-    python scripts/appendix_analysis.py --results-dir results
-
-    # Disable LaTeX rendering
-    python scripts/appendix_analysis.py --results-dir results --no-tex
-    ```
-    *   Requires data for the `REFERENCE_PLATFORM` (default: `macos`) to be present.
-    *   Output is saved to `results/appendix_analysis/`.
 
 ## Output Description
 
