@@ -37,3 +37,24 @@ dist/
 # Ignore vendor libraries except for a placeholder
 vendor/
 !vendor/.gitkeep
+
+# Analysis scripts and results
+scripts/analysis/
+results/
+*.csv
+*.xlsx
+*.json
+*.pkl
+*.h5
+*.npy
+*.npz
+
+# Test files
+debug_test.py
+quick_test.py
+minimal_test.py
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
